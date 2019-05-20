@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body onload="addScript()">
+
+    <div class = "jumbotron jumbotron-fluid text-center">
+        <h1>Api Test Site</h1>
+        <p>read and write data</p>
+    </div>
+
+    <div class = "container text-center">
+        <div class="row text-center">
+            <div class="col-sm-6 p-5 mb-5" style = "border-right: 1px solid grey">
+                <div class="row form-group">
+                    <textarea class="form-control" rows="15" id="read-box" style="resize: none;"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                    <button class="btn btn-primary" onclick="getData()">Read Data</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-5 mb-5">
+                <div class="row form-group">
+                    <label for="name-box" class="col-sm-4">Name:</label>
+                    <input type="text" class="form-control col-sm-8" id="name-box">
+                </div>
+                <div class="row form-group">
+                    <label for="update-name-box" class="col-sm-4">Update Name:</label>
+                    <input type="text" class="form-control col-sm-8" id="update-name-box">
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-12 text-center">
+                    <button class="btn btn-primary col-sm-2 m-3" onclick="insertData()">Insert</button>
+                    <button class="btn btn-primary col-sm-2 m-3" onclick="updateData()">Update</button>
+                    <button class="btn btn-primary col-sm-2 m-3" onclick="deleteData()">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "jumbotron jumbotron-fluid text-center mb-0">
+        <p>Copyright &copy; Deku Corp India.inc</p>
+    </div>
+    
+
+    
+</body>
+</html>
